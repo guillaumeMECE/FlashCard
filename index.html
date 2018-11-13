@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+   <!--Navbar-->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">FlashCard</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,12 +26,12 @@
             <a class="navbar-brand" href="#">
                <img src="" width="30px" height="30px" id="googlePic" class="d-inline-block align-top roundedImage" alt="">
             </a>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="loginbtn" onclick="googleLogin()">Login</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="loginBtn">Login</button>
          </div>
       </div>
    </nav>
 
-
+   <!--Card-->
    <div class="card text-white bg-info mx-auto mt-5 shadow" style="max-width: 18rem;">
       <div class="card-header">Header</div>
       <div class="card-body">
@@ -59,7 +61,10 @@
       firebase.initializeApp(config);
    </script>
 
+   <!--My JS files-->
    <script src="src\authFirebase.js" type="text/javascript"></script>
+   <script src="src\Card.js" type="text/javascript"></script>
+   <script src="src\Manager.js" type="text/javascript"></script>
 
    <!--BootStrap-->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
