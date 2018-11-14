@@ -1,4 +1,13 @@
 $(document).ready(function() {
+   let mainMng = new Manager();
+   //mainMng.init();
+
+   // button-addon2
+   $("#button-addon2").click(function() {
+      document.getElementById("tst").value = mainMng.getTst();
+      //mainMng.getStr1();
+   });
+
    $("#loginBtn").click(function() {
       function googleLogin() {
          const provider = new firebase.auth.GoogleAuthProvider();
@@ -11,6 +20,7 @@ $(document).ready(function() {
             /*document.getElementById("userName").textContent = user.displayName;
             document.getElementById("emailAdress").textContent = user.email;*/
             document.getElementById("googlePic").src = user.photoURL;
+
          }).catch(function(error) {
             // Handle Errors
             var errorCode = error.code;
