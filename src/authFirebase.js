@@ -4,7 +4,8 @@ $(document).ready(function() {
 
    // button-addon2
    $("#button-addon2").click(function() {
-      document.getElementById("tst").value = mainMng.getTst();
+      mainMng.cardManage();
+      //document.getElementById("tst").value = mainMng.getTst();
       //mainMng.getStr1();
    });
 
