@@ -1,6 +1,7 @@
 class Manager {
    constructor() {
-      this.tabCard = [];
+      this.tabCard = []; // tab de cartes
+      this.keyCard = 0; // id de la carte actuelle (connaitre notre avancé)
       var self = this;
       var database = firebase.database();
       database.ref('/Cards/').once('value', function(snapshot) {
@@ -14,6 +15,16 @@ class Manager {
 
    add(other) {
       this.tabCard.push(other);
+   }
+
+   cardManage(){
+
+   }
+   flipCard(){
+
+   }
+   changeCard(){
+
    }
 
    getTst() {
