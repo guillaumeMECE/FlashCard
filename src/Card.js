@@ -12,3 +12,12 @@ class Card {
       return this.str2;
    }
 }
+/*
+function Levenshtein(str1,str2) {
+   if (str1 == str2) {
+      return true;
+   }else {
+      return false;
+   }
+}
+*/
